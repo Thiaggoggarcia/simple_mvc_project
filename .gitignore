@@ -1,3 +1,7 @@
+#Pastas
+.vscode
 .venv
+
+#Arquivos
 .pytest_cache
 **/__pycache__
