@@ -9,7 +9,7 @@ class PersonRegisterView:
         self.__validate_inputs(person_name,person_age)
         
         #Chamar a logica response
-        return HttpResponse(body={"Registrando":"Pessoa "}, status_code=201)
+        return HttpResponse(body={"Registrando o Usuário ":person_name}, status_code=201)
         
     def __validate_inputs(self, person_name: any, person_age: any) -> None:
         if (
