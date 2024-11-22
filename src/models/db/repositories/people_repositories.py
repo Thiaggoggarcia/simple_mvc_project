@@ -6,7 +6,7 @@ class PeopleRepository:
          
     def get_person_by_name(self, person_name: str) -> tuple:
         cursor = self.__connn.cursor()
-        cursor.execute('SELECT name, age FROM people = ?', (person_name,))
+        cursor.execute('SELECT name, age FROM people WHERE name = ?', (person_name,))
         person = cursor.fetchone()
         return person
     
